@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./components/Card";
+import Header from "./components/Header";
+import "./scss/app.scss";
+import React from "react";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Info from "./pages/Info";
+import Singlepage from "./pages/Singlepage";
 
 function App() {
+  const [searchValue, setSearchValue] = React.useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+
+        <div className="content">
+          {
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <Home
+                    searchValue={searchValue}
+                    setSearchValue={setSearchValue}
+                  />
+                }
+              />
+              <Route path="/info/:id" element={<Singlepage />} />
+            </Routes>
+          }
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,20 @@
+.App {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    justify-items: center;
+  }
+  .main_title {
+    margin-top: 65px;
+    margin-bottom: 45px;
+    padding: 10px 65px;
+  }
+
+  .text_2 {
+    padding-bottom: 35px;
+  }
+}

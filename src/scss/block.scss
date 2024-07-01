@@ -1,0 +1,31 @@
+.block {
+  margin-top: 90px;
+  background-color: #44a1e5;
+  color: #fff;
+  height: 480px;
+  display: flex;
+  justify-content: space-around;
+  h2 {
+    font-size: 32px;
+    padding-bottom: 35px;
+    margin: 0;
+  }
+  p {
+    font-size: 27px;
+    font-weight: 200;
+    margin: 0;
+  }
+  .btn_block {
+    margin: 0px;
+    background-color: #fff;
+    border: none;
+    width: 230px;
+    height: 55px;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .block_text {
+    margin-top: 105px;
+  }
+}

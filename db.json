@@ -1,0 +1,53 @@
+{
+  "shirts": [
+    {
+      "id": 0,
+      "imageUrl": "https://ibb.co/n3xy07V",
+      "title": "Oversized Fit Cotton T-shirt",
+      "price": 83,
+      "rating": 4
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://i.postimg.cc/hGmN1rLv/white-t-shirt.png",
+      "title": "White T-Shirt",
+      "price": 900,
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://i.postimg.cc/s2429XBZ/3.png",
+      "title": "Black T-Shirt",
+      "price": 44,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://ibb.co/n3xy07V",
+      "title": "Oversized Fit Cotton T-shirt",
+      "price": 33,
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://i.postimg.cc/PxD52VnV/4.png",
+      "title": "Green T-Shirt",
+      "price": 590,
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://i.postimg.cc/ZnFKh9Rr/5.png",
+      "title": "Regular Fit T-shirt",
+      "price": 83,
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://i.postimg.cc/6p16wx91/6.png",
+      "title": "Regular Fit T-shirt",
+      "price": 99,
+      "rating": 4
+    }
+  ]
+}
