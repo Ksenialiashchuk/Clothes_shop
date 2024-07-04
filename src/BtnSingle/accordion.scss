@@ -1,0 +1,35 @@
+.accordion {
+  li {
+    list-style-type: none;
+  }
+
+  .accordion-header {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    color: #000;
+    width: 730px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #9d9d9d;
+    box-shadow: 1px 2px 5px #979696;
+  }
+  .accordion-item {
+    margin: 25px;
+  }
+  .accordion-body {
+    padding-top: 20px;
+    max-width: 730px;
+  }
+
+  .accordion-collapse {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+  }
+  .accordion-collapse.open {
+    height: auto;
+  }
+}

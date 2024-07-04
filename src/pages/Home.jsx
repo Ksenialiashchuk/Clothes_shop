@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "../components/Card";
 import Block from "../components/Block";
-import Accordion from "../components/Accordion/Accordion";
+import Accordion from "../components/AccordionSingle/Accordion";
 import axios from "axios";
-import data from "../components/Accordion/data";
+import data from "../components/AccordionSingle/data";
 import Footer from "../components/Footer";
 import { Link, Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -43,6 +43,7 @@ export default function Home({ searchValue, setSearchValue }) {
                   img={obj.imageUrl}
                   price={obj.price}
                   id={obj.id}
+                  key={obj.id}
                 />
               ))}
           </div>

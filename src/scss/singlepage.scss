@@ -1,0 +1,35 @@
+.singlepage {
+  display: flex;
+  justify-content: space-around;
+  .title_single {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  p {
+    font-size: 24px;
+  }
+  .img_single {
+    width: 596px;
+    height: 600px;
+  }
+  .block_single {
+    width: 500px;
+  }
+
+  .line_single {
+    width: 420px;
+    color: #000;
+    border-bottom: 1px solid #000;
+    margin: 50px 0 50px 0;
+  }
+
+  .button_single {
+    background-color: #44a1e5;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    border: none;
+    width: 420px;
+    height: 62px;
+  }
+}
