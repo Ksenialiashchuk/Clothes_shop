@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../scss/header.scss";
 import Search from "./Search";
+import basket from "../assets/img/basket.png";
 
 export default function Header({ searchValue, setSearchValue }) {
   return (
@@ -22,7 +23,12 @@ export default function Header({ searchValue, setSearchValue }) {
           </li>
         </ul>
       </div>
-      <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+      <div className="basket_display">
+        <Search searchValue={searchValue} setSearchValue={setSearchValue} />
+        <Link to="/basket">
+          <img src={basket} className="img_header" />
+        </Link>
+      </div>
     </div>
   );
 }

@@ -4,14 +4,13 @@ import Block from "../components/Block";
 import Accordion from "../components/AccordionSingle/Accordion";
 import axios from "axios";
 import data from "../components/AccordionSingle/data";
-import Footer from "../components/Footer";
+import Skeleton from "react-loading-skeleton";
 import { Link, Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 export default function Home({ searchValue, setSearchValue }) {
   const [items, setItems] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-  const Navigate = useNavigate();
 
   React.useEffect(() => {
     axios
@@ -36,14 +35,15 @@ export default function Home({ searchValue, setSearchValue }) {
                 ) {
                   return true;
                 }
+                return false;
               })
               .map((obj) => (
                 <Card
-                  title={obj.title}
-                  img={obj.imageUrl}
-                  price={obj.price}
-                  id={obj.id}
                   key={obj.id}
+                  img={obj.imageUrl || <Skeleton />}
+                  title={obj.title || <Skeleton />}
+                  price={obj.price || <Skeleton />}
+                  id={obj.id}
                 />
               ))}
           </div>

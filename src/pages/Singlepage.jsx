@@ -2,7 +2,6 @@ import React from "react";
 import "../scss/singlepage.scss";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import BtnSingle from "../BtnSingle/BtnSingle";
 
 export default function Singlepage() {
   const [item, setItem] = useState({});

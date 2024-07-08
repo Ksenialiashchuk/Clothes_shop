@@ -4,6 +4,7 @@ import "./scss/app.scss";
 import React from "react";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import Basket from "./components/Basket/Basket";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Info from "./pages/Info";
@@ -30,6 +31,7 @@ function App() {
                 }
               />
               <Route path="/info/:id" element={<Singlepage />} />
+              <Route path="/basket" element={<Basket />} />
             </Routes>
           }
         </div>
