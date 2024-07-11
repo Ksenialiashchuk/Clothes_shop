@@ -1,8 +1,10 @@
 import "../scss/card.scss";
 import { Link } from "react-router-dom";
+import React from "react";
+import { onAddToCart } from "../components/Basket/Basket";
 
 import { useNavigate } from "react-router-dom";
-export default function Card(item) {
+export default function Card(item, { onAddToCart }) {
   const Navigate = useNavigate();
   return (
     <div className="card">
@@ -15,6 +17,7 @@ export default function Card(item) {
       <div className="price_card">
         <p>PRICE: ${item.price}</p>
       </div>
+      <button onClick={() => onAddToCart(item)}>Add to Cart</button>
     </div>
   );
 }
