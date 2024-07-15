@@ -12,6 +12,10 @@ import Singlepage from "./pages/Singlepage";
 
 function App() {
   const [searchValue, setSearchValue] = React.useState("");
+  const [cartItems, setCartItems] = React.useState([]);
+  const onAddToCart = (obj) => {
+    setCartItems([...cartItems, obj]);
+  };
 
   return (
     <div className="App">
@@ -27,11 +31,12 @@ function App() {
                   <Home
                     searchValue={searchValue}
                     setSearchValue={setSearchValue}
+                    onAddToCart={onAddToCart}
                   />
                 }
               />
               <Route path="/info/:id" element={<Singlepage />} />
-              <Route path="/basket" element={<Basket />} />
+              <Route path="/basket" element={<Basket items={cartItems} />} />
             </Routes>
           }
         </div>

@@ -8,9 +8,9 @@ import Skeleton from "react-loading-skeleton";
 import { Link, Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-export default function Home({ searchValue, setSearchValue }) {
-  const [items, setItems] = React.useState([]);
+export default function Home({ searchValue, setSearchValue, onAddToCart }) {
   const [isLoading, setIsLoading] = React.useState(true);
+  const [items, setItems] = React.useState([]);
 
   React.useEffect(() => {
     axios
@@ -37,13 +37,14 @@ export default function Home({ searchValue, setSearchValue }) {
                 }
                 return false;
               })
-              .map((obj) => (
+              .map((item) => (
                 <Card
-                  key={obj.id}
-                  img={obj.imageUrl || <Skeleton />}
-                  title={obj.title || <Skeleton />}
-                  price={obj.price || <Skeleton />}
-                  id={obj.id}
+                  key={item.id}
+                  img={item.imageUrl || <Skeleton />}
+                  title={item.title || <Skeleton />}
+                  price={item.price || <Skeleton />}
+                  id={item.id}
+                  onPlus={onAddToCart}
                 />
               ))}
           </div>
