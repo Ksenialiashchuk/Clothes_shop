@@ -14,6 +14,7 @@
     .basket_img {
       width: 190px;
       height: 170px;
+      padding-top: 15px;
     }
     .basket_title {
       font-size: 23px;
@@ -29,6 +30,8 @@
     .cart_box {
       padding-left: 20px;
       display: flex;
+      padding-top: 15px;
+      justify-content: space-between;
     }
   }
 }
