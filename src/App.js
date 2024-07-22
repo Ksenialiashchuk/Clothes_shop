@@ -5,9 +5,9 @@ import React from "react";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Basket from "./components/Basket/Basket";
+import News from "./pages/News";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Info from "./pages/Info";
 import Singlepage from "./pages/Singlepage";
 
 function App() {
@@ -37,6 +37,7 @@ function App() {
               />
               <Route path="/info/:id" element={<Singlepage />} />
               <Route path="/basket" element={<Basket items={cartItems} />} />
+              <Route path="/news" element={<News />} />
             </Routes>
           }
         </div>
