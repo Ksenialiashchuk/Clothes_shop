@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Basket from "./components/Basket/Basket";
 import News from "./pages/News";
+import "./flickity.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Singlepage from "./pages/Singlepage";
